@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/style.css">
+    <!--This link is from google fonts, and it adds in the font sulphur point.-->
+    <link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet">
+    <title>Contact Me</title>
+</head>
+<body>
+    <nav class="contactnav">
+        <ul>
+             <!--All hrefs here relocate the user to another html page, with the social media link relocating to my linkedin page (external)-->
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href=index.html">Home</a></li>
+            <li><a href="cv.html">My CV</a></li>
+            <li><a href="https://www.linkedin.com/in/calum-barratt-8b06a5184">Social Media</a></li>
+            </ul>
+    </nav>
+    <h1 class="contacttitle">Contact me!</h1>
+    <!--the 'form' tag is used here to create a form where users can contact me on-->
+        <form>
+            <!--the form is in an unordered list to help with the organisation-->
+            <ul class="form">
+                <li class="label">
+                    <!--each 'label' is an element in the form, such as 'name' 'email' and 'message'-->
+                    <label for="first name">Your First-Name:</label>
+                    <input type="text" class="firstname" name="user_firstname">
+                </li>
+                <li class="label">
+                    <label for="surname">Your surname:</label>
+                    <input type="text" class="surname" name="user_surname">
+                </li>
+                <li class="label">
+                    <label for="email">E-mail address:</label>
+                    <input type="email" class="mail" name="user_email">
+                </li>
+                <li class="label">
+                    <label for="message">Drop me a line!</label>
+                    <textarea class="message" name="user_message"></textarea>
+                </li>
+                <!--this final element is the button the user clicks to send the form-->
+                <li class="button">
+                    <button type="submit">Send!</button>
+                </li>
+            </ul>
+        </form>
+
+
+<!--Created another footer with external links to social media-->
+<footer class="contactfooter">
+    <div class="icon">
+     <a href="https://www.linkedin.com/in/calum-barratt-8b06a5184"><ion-icon name ="logo-linkedin" class="linkedin"></ion-icon></a>
+     <a href="https://github.com/Calbar01"><ion-icon name="logo-github" class="github"></ion-icon></a>
+     </div>
+</footer>
+<!--Calls from the external source to add icons into the page-->
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+
+</html>

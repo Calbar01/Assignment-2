@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/style.css">
+    <!--This link is from google fonts, and it adds in the font sulphur point.-->
+    <link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet">
+    <title>My CV</title>
+</head>
+<body>
+    <!--container for the whole of the cv page-->
+    <div class="cvall">
+        <nav class="cvnav">
+            <ul>
+                 <!--All hrefs here relocate the user to another html page, with the social media link relocating to my linkedin page (external)-->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact me</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="https://www.linkedin.com/in/calum-barratt-8b06a5184">Social Media</a></li>
+            </ul>
+        </nav>
+        <!--container for the left hand column, it has my name and an image in it.-->
+        <div class="name">
+            <!--the h1 and h3 tags have classes so i can style them seperately rather than styling every h1 and h3 tag-->
+            <h1 class="cvname">Calum Joshua Barratt</h1>
+            <h3 class="sub">University of Northampton<br>Junior Web Developer</h3>
+            <!--import an image of the logos of html, css, and js-->
+            <img class="logos" src="images/logos.png">
+        </div>
+        <!--created a container for the main content of the cv, using a variety of p tags to talk about my experiences-->
+        <div class="content">
+            <h1 class="content-title">Experience</h1>
+            <h2>Lord Grey Academy Sixth Form</h2>
+            <h3>Web Development Course 2017-2018</h3>
+            <p>Whilst studying for my CTEC in ICT at Lord Grey Sixth form, I took part in a Web Development course, where I 
+                <br>learnt key skills, such as HTML5, CSS3, and a small part of JavaScript, during my studies, I developed a website
+            <br> and also developed a small app, using Python, this was a simple troubleshooting application, because of this, 
+        <br>i have also got skills with the use of Python, and the use of Python IDEs.</p>
+        <h1 class="content-title">Education</h1>
+        <!--I have used and unordered list to bullet point my key education-->
+        <ul>
+            <li class="educationlist">Level 3 CTEC in ICT from Lord Grey Sixth Form.</li>
+            <li class="educationlist">GCSE in ICT from Lord Grey Academy.</li>
+            <li class="educationlist">Studying a BSc in Business Computing (Web Development) at the University of Northampton.</li>
+        </ul>
+        <h1 class="content-title">Skills</h1>
+        <ul class="skillslist">
+            <!--I have similarly used an unordered list here too to bullet point-->
+            <li class="educationlist">Use of Figma and creating Wireframes</li>
+            <li class="educationlist">Version Control with Visual Studio Code and GitHub</li>
+            <li class="educationlist">Use of HTML5 and CSS3 to create webpages</li>
+            <li class="educationlist">Some Knowledge of JavaScript and JQuery</li>
+            <li class="educationlist">Knowledge of Python as well as the use of Python IDEs</li>
+            <li class="educationlist">Learning Java, and how to create GUIs</li>
+        </ul>
+        </div>
+
+    </div>
+    <!--Created another footer with social media links-->
+<footer class="cvfooter">
+    <div class="icon">
+     <a href="https://www.linkedin.com/in/calum-barratt-8b06a5184"><ion-icon name ="logo-linkedin" class="linkedin"></ion-icon></a>
+     <a href="https://github.com/Calbar01"><ion-icon name="logo-github" class="github"></ion-icon></a>
+     </div>
+</footer>
+<!--Calls from the external source to add icons into the page-->
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+
+</html>
