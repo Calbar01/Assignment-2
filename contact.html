@@ -10,6 +10,16 @@
     <title>Contact Me</title>
 </head>
 <body>
+    <div id="modal-container">
+        <div class="modal-background">
+            <div class="modal">
+                <h2>Your message has been sent!</h2>
+                <p>Thank you.</p>
+            </div>
+        </div>
+    </div>
+
+
     <nav class="contactnav">
         <ul>
              <!--All hrefs here relocate the user to another html page, with the social media link relocating to my linkedin page (external)-->
@@ -42,9 +52,11 @@
                     <textarea class="message" name="user_message"></textarea>
                 </li>
                 <!--this final element is the button the user clicks to send the form-->
+                <div id="modal-btn">
                 <li class="button">
                     <button type="submit">Send!</button>
                 </li>
+                </div>
             </ul>
         </form>
 
