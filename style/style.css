@@ -165,13 +165,10 @@ li a:hover{
     display: grid;
     width: 50px;
     height: 50px;
-    grid-column:  repeat(3, 240px);
-    grid-row: auto;
-    grid-gap: 100px;
-    text-align: center;
-    /* margin-left: 20px; */
-    /* margin: auto; */
+    grid: repeat(2, 240px) / auto-flow 500px;
+    margin-left: 5rem;
 }
+
 
 .image1 {
     grid-column: 1;
