@@ -313,6 +313,10 @@ button:hover{
 }
 
 /*Modal*/
+/*A Modal is a pop up message which appears on screen*/
+
+/*This styles the container which will hold the modal, to style it for the whole page,
+and give it an opacity of 0.7.*/
 .bg-modal{
     width: 100%;
     height: 100%;
@@ -325,6 +329,7 @@ button:hover{
     display: none;
 }
 
+/*This is the modal itself, a white box with text in it which has been centred in relative to .bg-modal*/
 .modal-content {
     width: 350px;
     height: 250px;
@@ -335,7 +340,8 @@ button:hover{
     margin-top: 0;
     padding-top: 0;
 }
-
+/*This is styling the image which has been imported from the unsplash API to fit in the modal and 
+be circular*/
 .modal-img{
     border-style: none;
     border-radius: 100%;
@@ -343,6 +349,7 @@ button:hover{
     padding: 25px;
 }
 
+/*Syling the 'exit' button to appear in top right, and if the user hovers, the cursor changes to pointer.*/
 .exit{
     font-size: 30px;
     padding-left: 310px;
