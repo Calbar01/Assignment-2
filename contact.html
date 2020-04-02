@@ -10,14 +10,12 @@
     <title>Contact Me</title>
 </head>
 <body>
-    <div id="modal-container">
-        <div class="modal-background">
-            <div class="modal">
+    <div class="modal">
+        <div class="modal-content">
                 <h2>Your message has been sent!</h2>
                 <p>Thank you.</p>
             </div>
         </div>
-    </div>
 
 
     <nav class="contactnav">
@@ -52,11 +50,9 @@
                     <textarea class="message" name="user_message"></textarea>
                 </li>
                 <!--this final element is the button the user clicks to send the form-->
-                <div id="modal-btn">
                 <li class="button">
-                    <button type="submit">Send!</button>
+                    <button type="submit" id="modal-button">Send!</button>
                 </li>
-                </div>
             </ul>
         </form>
 
@@ -70,6 +66,7 @@
 </footer>
 <!--Calls from the external source to add icons into the page-->
 <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+<script src="main.js"></script>
 </body>
 
 </html>

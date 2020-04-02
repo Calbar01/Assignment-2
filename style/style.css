@@ -314,7 +314,7 @@ button:hover{
     border-style: none;
 }
 
-.modal-container{
+.modal{
     display: none;
     position: fixed;
     padding-top: 50px;
@@ -325,7 +325,7 @@ button:hover{
     background-color: #aaaaaa;
 }
 
-.modal-background{
+.modal-content{
     position: relative;
     background-color: white;
     padding: 20px;
