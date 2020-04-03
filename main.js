@@ -42,29 +42,35 @@ function validation(){
 
 /*Creates function to 'grab' the modal-button, add an event listener, and if the user clicks on the button, 
 the modal will change to 'flex' to be able to view the modal*/
-    document.getElementById('modal-button').addEventListener('click',
     function modal(){
         document.querySelector('.bg-modal').style.display = 'flex';
-    });
+        return true;
+    };
+
+
 
 /*Does opposite of previous function, resets the display to 'none' if the user clicks on the exit button*/
-document.querySelector('.exit').addEventListener('click',
-function(){
-    document.querySelector('.bg-modal').style.display = 'none';
+// document.querySelector('.exit').addEventListener('click',
+// function exit(){
+//     document.querySelector('.bg-modal').style.display = 'none';
     
-});
+// });
 
-if (validation == true){
+
+
+
+function check(){
+if (validation() == true){
     modal();
 };
+}
 
 
 
 
-
-document.getElementById('burger').addEventListener('click', 
-function(){
-    document.querySelector('nav li').toggleClass('clicked');
-});
+// document.getElementById('burger').addEventListener('click', 
+// function(){
+//     document.querySelector('nav li').toggleClass('clicked');
+// });
 
 //Help for burger menu found from https://www.youtube.com/watch?v=YmrmQctnm44
