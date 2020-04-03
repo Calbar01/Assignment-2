@@ -12,3 +12,36 @@ document.querySelector('.exit').addEventListener('click',
 function(){
     document.querySelector('.bg-modal').style.display = 'none';
 });
+
+function validation(){
+    let firstname = document.forms["messageForm"]["user_firstname"];
+    let surname = document.forms["messageForm"]["user_surname"];
+    let email = document.forms["messageForm"]["user_email"];
+    let message = document.forms["messageForm"]["user_message"];
+
+    if (firstname.value == ""){
+        window.alert("Please enter your first name.");
+        firstname.focus();
+        return false;
+    }
+
+    if (surname.value == ""){
+        window.alert("Please enter your surrname.");
+        surname.focus();
+        return false;
+    }
+
+    if (email.value == ""){
+        window.alert("Please enter your email.");
+        email.focus();
+        return false;
+    }
+
+    if (message.value == ""){
+        window.alert("Please enter a message.");
+        message.focus();
+        return false;
+    }
+
+    return true;
+}
