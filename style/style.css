@@ -45,6 +45,19 @@ p{
 
 /*Navigation bar*/
 /*Starter code found from NILE*/
+.burger div{
+    width: 30px;
+    height: 5px;
+    background: #ffffff;
+    margin: 5px 0;
+}
+
+.burger{
+    float: left;
+    visibility: hidden;
+    margin: 5px;
+}
+
 ul{
     overflow: auto;
     list-style-type: none;
@@ -441,6 +454,28 @@ be circular*/
 /*iPhoneX Query, Index*/
 @media(max-width: 375px)
 {
+    .burger{
+        visibility: visible;
+        cursor: pointer;
+        display: block;
+    }
+
+    nav li{
+        list-style: none;
+        display: none;
+        overflow: hidden;
+    }
+
+    nav li.clicked{
+        visibility: visible;
+        width: 100%;
+        text-align: left;
+        display: block;
+        height: auto;
+        float: none;
+        margin: 0;
+    }
+
     /*as this is a phone, the main style will be positioned into one column, with the content following after eachother going downwards*/
     .intro{
         grid-column: 2;
@@ -456,9 +491,6 @@ be circular*/
     }
     p{
         font-size: 15px;
-    }
-    .landingnav{
-        font-size: 11px;
     }
     .indexfooter,
     .portfoliofooter,
