@@ -32,7 +32,7 @@ function validation(){
 
     else {
     return true;
-}
+    }
 }
 
 
