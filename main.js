@@ -33,18 +33,19 @@ function validation(){
     else {
     return true;
     }
-}
-
-
-
+};
 
 //Help found from https://www.youtube.com/watch?v=gLWIYk0Sd387
-
 /*Creates function to 'grab' the modal-button, add an event listener, and if the user clicks on the button, 
 the modal will change to 'flex' to be able to view the modal*/
     function modal(){
-        document.querySelector('.bg-modal').style.display = 'flex';
-        return true;
+        document.querySelector('.bg-modal').style.display= 'flex';
+    };
+
+function check(){
+    if (validation() == true){
+        modal();
+     }
     };
 
 
@@ -59,18 +60,19 @@ the modal will change to 'flex' to be able to view the modal*/
 
 
 
-function check(){
-if (validation() == true){
-    modal();
-};
-}
 
 
 
 
-// document.getElementById('burger').addEventListener('click', 
-// function(){
-//     document.querySelector('nav li').toggleClass('clicked');
-// });
+
+document.getElementById('burger').addEventListener('click', 
+function burgerCheck(){
+     document.querySelector('nav li').disabled = true;
+     return true;
+ });
+
+ if (burgerCheck() == true){
+     document.querySelector('nav li').disabled = true;
+ }
 
 //Help for burger menu found from https://www.youtube.com/watch?v=YmrmQctnm44
