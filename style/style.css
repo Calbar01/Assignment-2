@@ -451,12 +451,15 @@ be circular*/
 /*iPhoneX Query, Index*/
 @media(max-width: 375px)
 {
+
+
+    
+
     .burger{
         cursor: pointer;
         display: block;
-        width: 100%;
+        width: 375px;
         background-color: black;
-        margin-top: 0;
     }
 
     .nav-links{
@@ -502,6 +505,7 @@ be circular*/
         height: 20px;
         margin-top: -50px;
         position: fixed;
+        width: 375px;
     }
     .icon{
         font-size: 20px;
