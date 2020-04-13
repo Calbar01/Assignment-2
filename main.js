@@ -48,6 +48,66 @@ function check(){
      }
     };
 
+//Random Quote Modal
+let randomquoteTrigger = document.querySelector(".image1");
+let closeButton = document.querySelector(".exit");
+function openRandomQuote(){
+    document.querySelector('.randomQuoteModal').style.display = 'flex';
+}
+
+randomquoteTrigger.addEventListener("click", openRandomQuote);
+
+//To-Do List Modal
+let todolistTrigger = document.querySelector(".image2");
+function openTodo(){
+    document.querySelector('.todolistModal').style.display = 'flex';
+}
+
+todolistTrigger.addEventListener("click",openTodo);
+
+//Weather Modal
+let weatherTrigger = document.querySelector(".image3");
+function openWeather(){
+    document.querySelector('.weatherModal').style.display = 'flex';
+}
+weatherTrigger.addEventListener("click",openWeather);
+
+//Babies Modal
+let babiesTrigger = document.querySelector("image4");
+function openBabies(){
+    document.querySelector('babiesModal').style.display = 'flex';
+}
+babiesTrigger.addEventListener("click",openBabies);
+
+
+function windowOnClick(event) {
+    if (event.target === randomquoteTrigger) {
+        openRandomQuote();
+    }
+    if (event.target === todolistTrigger){
+        openTodo();
+    }
+    if(event.target === weatherTrigger){
+        openWeather();
+    }
+    if(event.target === babiesTrigger){
+        openBabies();
+    }
+    if(event.target === closeButton){
+        close();
+    }
+}
+
+function close(){
+    document.querySelector('.randomQuoteModal').style.display = 'none';
+    document.querySelector('.todolistModal').style.display = 'none';
+    document.querySelector('.weatherModal').style.display = 'none';
+    document.querySelector('.babiesModal').style.display = 'none';
+}
+window.addEventListener("click", windowOnClick);
+closeButton.addEventListener("click", open);
+
+
 
 
 /*Does opposite of previous function, resets the display to 'none' if the user clicks on the exit button*/
