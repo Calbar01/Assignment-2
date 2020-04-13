@@ -80,10 +80,4 @@ burger();
 
 
 
-// document.getElementById("burger").addEventListener('click', burger())
 
-// function burger(){
-//     document.querySelector("nav li").visibility=visible;
-// }
-
-//Help for burger menu found from https://www.youtube.com/watch?v=YmrmQctnm44

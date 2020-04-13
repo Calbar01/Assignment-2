@@ -183,16 +183,25 @@ li a:hover{
 .image1 {
     grid-column: 1;
     grid-row: 1;
+    width: 220px;
 }
 
 .image2 {
     grid-column: 2;
     grid-row: 1;
+    width: 220px;
 }
 
 .image3 {
     grid-column: 3;
     grid-row: 1;
+    width: 220px;
+}
+
+.image4{
+    grid-column: 1;
+    grid-row: 2;
+    width: 220px;
 }
 
 /*All images will be circular, and will tranistion to have 0.5 opacity when hovered over after 0.3s*/
