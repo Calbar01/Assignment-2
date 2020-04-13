@@ -38,13 +38,13 @@ function validation(){
 //Help found from https://www.youtube.com/watch?v=gLWIYk0Sd387
 /*Creates function to 'grab' the modal-button, add an event listener, and if the user clicks on the button, 
 the modal will change to 'flex' to be able to view the modal*/
-    function modal(){
+    function modalContacts(){
         document.querySelector('.bg-modal').style.display= 'flex';
     };
 
 function check(){
     if (validation() == true){
-        modal();
+        modalContacts();
      }
     };
 
