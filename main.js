@@ -55,7 +55,7 @@ function openRandomQuote(){
     document.querySelector('.randomQuoteModal').style.display = 'flex';
 }
 
-randomquoteTrigger.addEventListener("click", openRandomQuote);
+
 
 //To-Do List Modal
 let todolistTrigger = document.querySelector(".image2");
@@ -63,21 +63,20 @@ function openTodo(){
     document.querySelector('.todolistModal').style.display = 'flex';
 }
 
-todolistTrigger.addEventListener("click",openTodo);
+
 
 //Weather Modal
 let weatherTrigger = document.querySelector(".image3");
 function openWeather(){
     document.querySelector('.weatherModal').style.display = 'flex';
 }
-weatherTrigger.addEventListener("click",openWeather);
+
 
 //Babies Modal
 let babiesTrigger = document.querySelector(".image4");
 function openBabies(){
     document.querySelector('.babiesModal').style.display = 'flex';
 }
-babiesTrigger.addEventListener("click",openBabies);
 
 
 function windowOnClick(event) {
@@ -105,7 +104,7 @@ function close(){
     document.querySelector('.babiesModal').style.display = 'none';
 }
 window.addEventListener("click", windowOnClick);
-closeButton.addEventListener("click", close());
+
 
 //Help found from https://sabe.io/tutorials/how-to-create-modal-popup-box
 
@@ -129,15 +128,17 @@ closeButton.addEventListener("click", close());
 
 
 const burger = () => {
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav-links');
+    const burger = document.querySelector(".burger");
+    const nav = document.querySelector(".nav-links");
 
     burger.addEventListener('click', ()=>{
-        nav.classList.toggle('.nav-clicked');
+        nav.classList.toggle(".nav-clicked");
     })
 }
 
 burger();
+
+//For some reason this has stopped workoing^ need to fix
 
 
 
