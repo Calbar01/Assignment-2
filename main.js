@@ -73,9 +73,9 @@ function openWeather(){
 weatherTrigger.addEventListener("click",openWeather);
 
 //Babies Modal
-let babiesTrigger = document.querySelector("image4");
+let babiesTrigger = document.querySelector(".image4");
 function openBabies(){
-    document.querySelector('babiesModal').style.display = 'flex';
+    document.querySelector('.babiesModal').style.display = 'flex';
 }
 babiesTrigger.addEventListener("click",openBabies);
 
@@ -105,7 +105,7 @@ function close(){
     document.querySelector('.babiesModal').style.display = 'none';
 }
 window.addEventListener("click", windowOnClick);
-closeButton.addEventListener("click", open);
+closeButton.addEventListener("click", close());
 
 //Help found from https://sabe.io/tutorials/how-to-create-modal-popup-box
 
