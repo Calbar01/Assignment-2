@@ -107,6 +107,8 @@ function close(){
 window.addEventListener("click", windowOnClick);
 closeButton.addEventListener("click", open);
 
+//Help found from https://sabe.io/tutorials/how-to-create-modal-popup-box
+
 
 
 
