@@ -184,28 +184,24 @@ li a:hover{
     grid-column: 1;
     grid-row: 1;
     width: 220px;
-    height: 220px;
 }
 
 .image2 {
     grid-column: 2;
     grid-row: 1;
     width: 220px;
-    height: 220px;
 }
 
 .image3 {
     grid-column: 3;
     grid-row: 1;
     width: 220px;
-    height: 220px;
 }
 
 .image4{
     grid-column: 1;
     grid-row: 2;
     width: 220px;
-    height: 220px;
 }
 
 /*All images will be circular, and will tranistion to have 0.5 opacity when hovered over after 0.3s*/
@@ -218,7 +214,6 @@ li a:hover{
     border-radius: 100%;
     opacity: 1;
     transition-duration: 0.3s;
-    cursor: pointer;
     
 }
 .image1:hover,
@@ -530,7 +525,7 @@ be circular*/
     /*IPhone X Query, Portfolio*/
     /*Similarly, the images will descend from image1 to image6*/
     .portpics{
-        padding-left: 12px;
+        padding-left: 50px;
         display: grid;
         grid: repeat(2, 300px) / auto-flow 370px;
     }
@@ -604,6 +599,3 @@ be circular*/
 /*https://stackoverflow.com/questions/42613350/how-can-i-create-multi-columns-from-a-single-unordered-list*/
 /*https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form*/
 /*https://blog.eduonix.com/web-programming-tutorials/build-responsive-website-footer-using-html-css/*/
-
-
-
