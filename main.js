@@ -110,33 +110,17 @@ window.addEventListener("click", windowOnClick);
 
 
 
-
-/*Does opposite of previous function, resets the display to 'none' if the user clicks on the exit button*/
-// document.querySelector('.exit').addEventListener('click',
-// function exit(){
-//     document.querySelector('.bg-modal').style.display = 'none';
-    
-// });
-
-
-
-
-
-
-
-
-
-
-const burger = () => {
+const burgerNav = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
 
     burger.addEventListener('click', ()=>{
         nav.classList.toggle('.nav-clicked');
-    })
-}
+        
+    });
+};
 
-burger();
+burgerNav();
 
 //For some reason this has stopped workoing^ need to fix
 
