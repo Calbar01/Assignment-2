@@ -188,4 +188,8 @@ moveCSS();
 moveJS();
 
 
+//Help for progress bar found from several sources: https://www.edureka.co/blog/html-progress-bar/
+//https://www.w3schools.com/howto/howto_js_progressbar.asp https://www.geeksforgeeks.org/creating-progress-bar-using-javascript/
+
+
 
