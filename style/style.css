@@ -282,6 +282,26 @@ help found from /*https://css-tricks.com/almanac/properties/l/list-style/*/
     column-count: 2;
 }
 
+.HTMLprogress,
+.CSSprogress,
+.JSprogress{
+    width: 100%;
+    background-color: white;
+}
+
+.HTMLbar,
+.CSSbar,
+.JSbar{
+    width: 10%;
+    height: 20px;
+    background-color: rgba(168, 24, 24, 0.959);
+    text-align: center;
+    justify-content: center;
+    line-height: 30px;
+    color: white;
+    padding: 0%;
+}
+
 /*CONTACT ME PAGE*/
 /*This creates the form, with no margin, makes the corners round, with a blue border
 help found from https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form*/

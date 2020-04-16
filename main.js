@@ -124,7 +124,68 @@ burgerNav();
 
 //For some reason this has stopped workoing^ need to fix
 
+let h = 0;
+let c =0;
+let j = 0
+function moveHTML() {
+    if (h===0){
+        h = 1;
+        let HTML = document.getElementById("HTMLbar");
+        let width = 1;
+        let id = setInterval(frame,10);
+        function frame(){
+            if (width >= 85){
+                clearInterval(id);
+                h = 0;
+            }else{
+                width++;
+                HTML.style.width = width + "%";
+                HTML.innerHTML = width + "%";
+            }
+        }
+    }
+}
+function moveCSS() {
+    if (c===0){
+        c = 1;
+        let CSS = document.getElementById("CSSbar");
+        let width = 1;
+        let id = setInterval(frame,10);
+        function frame(){
+            if (width >= 75){
+                clearInterval(id);
+                c = 0;
+            }else{
+                width++;
+                CSS.style.width = width + "%";
+                CSS.innerHTML = width + "%";
+            }
+        }
+    }
+}
+function moveJS() {
+    if (j===0){
+        j = 1;
+        let JS = document.getElementById("JSbar");
+        let width = 1;
+        let id = setInterval(frame,10);
+        function frame(){
+            if (width >= 50){
+                clearInterval(id);
+                j = 0;
+            }else{
+                width++;
+                JS.style.width = width + "%";
+                JS.innerHTML = width + "%";
+            }
+        }
+    }
+}
 
+
+moveHTML();
+moveCSS();
+moveJS();
 
 
 
