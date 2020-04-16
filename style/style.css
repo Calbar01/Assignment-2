@@ -490,7 +490,7 @@ be circular*/
         justify-content: center;
         transition-duration: 1s ease-in;
         flex-direction: column;
-        transform: translateY(-130%);
+        transform: translateY(-200%);
         transition: transform 0.5s ease-in;
     }
 
