@@ -50,7 +50,7 @@ function check(){
 
 //Random Quote Modal
 let randomquoteTrigger = document.querySelector(".image1");
-let closeButton = document.querySelector(".exit");
+let closeButton = document.querySelector('.exit');
 function openRandomQuote(){
     document.querySelector('.randomQuoteModal').style.display = 'flex';
 }
@@ -78,6 +78,13 @@ function openBabies(){
     document.querySelector('.babiesModal').style.display = 'flex';
 }
 
+function close(){
+    document.querySelector('.randomQuoteModal').style.display = 'none';
+    document.querySelector('.todolistModal').style.display = 'none';
+    document.querySelector('.weatherModal').style.display = 'none';
+    document.querySelector('.babiesModal').style.display = 'none';
+}
+
 
 function windowOnClick(event) {
     if (event.target === randomquoteTrigger) {
@@ -97,12 +104,7 @@ function windowOnClick(event) {
     }
 }
 
-function close(){
-    document.querySelector('.randomQuoteModal').style.display = 'none';
-    document.querySelector('.todolistModal').style.display = 'none';
-    document.querySelector('.weatherModal').style.display = 'none';
-    document.querySelector('.babiesModal').style.display = 'none';
-}
+
 window.addEventListener("click", windowOnClick);
 
 
@@ -116,9 +118,9 @@ const burgerNav = () => {
 
     burger.addEventListener('click', ()=>{
         nav.classList.toggle('.nav-clicked');
-        
+        burger.classList.toggle('.toggle');
     });
-};
+}
 
 burgerNav();
 

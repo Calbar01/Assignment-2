@@ -510,7 +510,6 @@ be circular*/
         background-color: black;
         align-items: center;
         justify-content: center;
-        transition-duration: 1s ease-in;
         flex-direction: column;
         transform: translateY(-200%);
         transition: transform 0.5s ease-in;
@@ -518,7 +517,16 @@ be circular*/
 
     .nav-clicked{
         transform: translateY(0%);
-        transition-duration: 1s ease-in;
+    }
+    
+    .toggle .line1{
+        transform: rotate(-45deg translate(-5px,6px));
+    }
+    .toggle .line2{
+        opacity: 0;
+    }
+    .toggle .line3{
+        transform: rotate(45deg translate(-5px,-6px));
     }
   
     /*as this is a phone, the main style will be positioned into one column, with the content following after eachother going downwards*/
