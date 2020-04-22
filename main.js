@@ -132,7 +132,7 @@ let j = 0
 function moveHTML() {
     if (h===0){
         h = 1;
-        let HTML = document.getElementById("HTMLbar");
+        let HTML = document.querySelector('.HTMLbar');
         let width = 1;
         let id = setInterval(frame,10);
         function frame(){
@@ -150,7 +150,7 @@ function moveHTML() {
 function moveCSS() {
     if (c===0){
         c = 1;
-        let CSS = document.getElementById("CSSbar");
+        let CSS = document.querySelector('.CSSbar');
         let width = 1;
         let id = setInterval(frame,10);
         function frame(){
@@ -168,7 +168,7 @@ function moveCSS() {
 function moveJS() {
     if (j===0){
         j = 1;
-        let JS = document.getElementById("JSbar");
+        let JS = document.querySelector('.JSbar');
         let width = 1;
         let id = setInterval(frame,10);
         function frame(){
