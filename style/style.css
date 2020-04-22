@@ -291,6 +291,7 @@ help found from /*https://css-tricks.com/almanac/properties/l/list-style/*/
 .JSprogress{
     width: 100%;
     background-color: white;
+    margin-left: 15px;
 }
 
 .HTMLbar,
