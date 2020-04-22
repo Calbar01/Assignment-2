@@ -38,7 +38,6 @@ p{
 /*Helps wth the words running off the screen, help found from /*https://stackoverflow.com/questions/26364636/how-to-fix-text-running-off-screen-and-breaking-layout-without-using-css-word-br/26364716*/
 p{
     font-size: 13pt;
-    word-break: break-all;
     font-family: 'Sulphur Point', sans-serif
 }
 
@@ -90,6 +89,8 @@ li a:hover{
 /*INDEX PAGE*/
 /*This puts the index file into a 'grid' allows me to put classes into columns to organise it.*/
 /*Found help from NILE, as well as https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout*/
+
+
 .indexall,
 .cvall{
     display: grid;
@@ -97,6 +98,7 @@ li a:hover{
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
 }
+
 /*The intro class is in the first column, and covering rows 2 through 4*/
 .intro{
     grid-column: 1;
@@ -112,12 +114,14 @@ li a:hover{
 .bio{
     grid-column: 2/4;
     grid-row: 3;
+    margin-right: 50px;
+
 }
 .purpose{
     grid-column: 2/4;
     grid-row: 2;
+    margin-right: 50px;
 }
-
 
 /*Picture of me will now be circular, with no inversion*/
 .me{
