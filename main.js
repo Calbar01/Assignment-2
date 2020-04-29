@@ -86,27 +86,6 @@ function close(){
 }
 
 
-function windowOnClick(event) {
-    if (event.target === randomquoteTrigger) {
-        openRandomQuote();
-    }
-    if (event.target === todolistTrigger){
-        openTodo();
-    }
-    if(event.target === weatherTrigger){
-        openWeather();
-    }
-    if(event.target === babiesTrigger){
-        openBabies();
-    }
-    if(event.target === closeButton){
-        close();
-    }
-}
-
-
-window.addEventListener("click", windowOnClick);
-
 
 //Help found from https://sabe.io/tutorials/how-to-create-modal-popup-box
 
@@ -118,7 +97,7 @@ const burgerNav = () => {
 
     burger.addEventListener('click', ()=>{
         nav.classList.toggle('.nav-clicked');
-        burger.classList.toggle('.toggle');
+        burger.classList.toggle('.toggle.line1,.toggle.line2,.toggle.line3');
     });
 }
 
@@ -192,6 +171,28 @@ moveJS();
 
 //Help for progress bar found from several sources: https://www.edureka.co/blog/html-progress-bar/
 //https://www.w3schools.com/howto/howto_js_progressbar.asp https://www.geeksforgeeks.org/creating-progress-bar-using-javascript/
+function windowOnClick(event) {
+    if (event.target === randomquoteTrigger) {
+        openRandomQuote();
+    }
+    if (event.target === todolistTrigger){
+        openTodo();
+    }
+    if(event.target === weatherTrigger){
+        openWeather();
+    }
+    if(event.target === babiesTrigger){
+        openBabies();
+    }
+    if(event.target === closeButton){
+        close();
+    }
+    if(event.target === document.querySelector('.burger')){
+        burgerNav();
+    }
+}
 
+
+window.addEventListener("click", windowOnClick);
 
 
