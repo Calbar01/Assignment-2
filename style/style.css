@@ -469,6 +469,11 @@ be circular*/
     padding-top: 100px;
     }
 
+    .portmessage{
+        height: 500px;
+        width: 300px;
+    }
+
     /*iPad Pro Query, CV*/
     /*increases font size, whilst also repositioning the name class downwards*/
     .name{
@@ -597,19 +602,27 @@ be circular*/
     }
     .image3{
         grid-column: 1;
-        grid-row: 3;
+        grid-row: 4;
     }
     .image4{
         grid-column: 1;
-        grid-row: 4;
+        grid-row: 5;
     }
     .image5{
         grid-column: 1;
-        grid-row: 5;
+        grid-row: 6;
     }
     .image6{
         grid-column: 1;
-        grid-row: 6;
+        grid-row: 7;
+    }
+    .portmessage{
+        grid-column: 1;
+        grid-row: 3;
+        width: 150px;
+    }
+    .portmessage p{
+        padding: 0%;
     }
     /*iPhone X Query, CV*/
     /*The cv content starts with my name is then followed by the lists of my experience*/
