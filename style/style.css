@@ -221,8 +221,12 @@ li a:hover{
     text-align: center;
     grid-column: 2;
     grid-row: 1;
+    transform: translatex(-1000%);
 }
 
+.portmessage-animate{
+    transform: translatex(0%);
+}
 
 .portcontent p{
     padding-top: 40px;
