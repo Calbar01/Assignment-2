@@ -164,8 +164,8 @@ let message = 'You can take a look at my different projects I have created by cl
 let speed = 30;
     function messageAnimate(){
     if (interval<message.length){
-        document.getElementById("message").innerHTML += txt.charAt(i);
-        i++;
+        document.getElementById("message").innerHTML += message.charAt(interval);
+        interval++;
         setTimeout(messageAnimate, speed);
 }
     

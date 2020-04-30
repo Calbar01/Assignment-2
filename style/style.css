@@ -569,7 +569,8 @@ be circular*/
     .portmessage{
         grid-column: 1;
         grid-row: 3;
-        width: 150px;
+        width: 200px;
+        height: 220px;
     }
     .portmessage p{
         padding: 0%;
