@@ -5,4 +5,4 @@ Over the course of my first year, I have committed to GitHub around 250 times, w
 
 You can see the layout of my contribution acitivity *below*
 
-![My Commits to GitHub](/images/commits.png) Format: ![Alt Text](url)
+![My Commits to GitHub](/images/commits.png) 
