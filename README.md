@@ -15,3 +15,12 @@ This produced the following result *below*
 ![JavaScript Validation](/images/JSValidation.png)
 
 This produced no errors, and did not need readjusting.
+
+## HTML Code Validation:
+Below you can find another image of my HTML Validation, I have processed the code using this [validator](https://validator.w3.org/).
+
+This produced the following result *below*
+
+![HTML Validation](/images/HTMLvalidator.png)
+
+This produced no errors, and did not need readjusting.
