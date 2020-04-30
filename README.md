@@ -24,3 +24,12 @@ This produced the following result *below*
 ![HTML Validation](/images/HTMLvalidator.png)
 
 This produced no errors, and did not need readjusting.
+
+## CSS Code Validation:
+Finally, you can find the image of my CSS validation below, where I processed it using this [validator](https://jigsaw.w3.org/css-validator/).
+
+This produced the following result *below*
+
+![CSS Validation](/images/CSSvalidator.png)
+
+This produced no errors, and did not need readjusting.
