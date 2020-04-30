@@ -91,20 +91,6 @@ function close(){
 
 
 
-const burgerNav = () => {
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav-links');
-
-    burger.addEventListener('click', ()=>{
-        nav.classList.toggle('.nav-clicked');
-        burger.classList.toggle('.toggle.line1,.toggle.line2,.toggle.line3');
-    });
-}
-
-burgerNav();
-
-//For some reason this has stopped workoing^ need to fix
-
 let h = 0;
 let c =0;
 let j = 0
@@ -168,17 +154,28 @@ moveHTML();
 moveCSS();
 moveJS();
 
-function messageAnimate(){
-    const message = document.querySelector('.portmessage');
-    const toggle = document.querySelector('.portmessage-animate')
-    message.classList.toggle(toggle);
-    
-}
 
-window.onload = messageAnimate();
 
 //Help for progress bar found from several sources: https://www.edureka.co/blog/html-progress-bar/
 //https://www.w3schools.com/howto/howto_js_progressbar.asp https://www.geeksforgeeks.org/creating-progress-bar-using-javascript/
+
+let interval = 0;
+let message = 'You can take a look at my different projects I have created by clicking on them and following the link. thank you for visiting!';
+let speed = 30;
+    function messageAnimate(){
+    if (interval<message.length){
+        document.getElementById("message").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(messageAnimate, speed);
+}
+    
+}
+window.onload = messageAnimate();
+
+//This code creates a 'typewriting' effect on the portfolio page. Help found from some different sites, such as 
+/*https://www.w3schools.com/howto/howto_js_typewriter.asp
+https://www.codesdope.com/blog/article/12-creative-css-and-javascript-text-typing-animati/*/
+
 function windowOnClick(event) {
     if (event.target === randomquoteTrigger) {
         openRandomQuote();

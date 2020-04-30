@@ -44,16 +44,6 @@ p{
 
 /*Navigation bar*/
 /*Starter code found from NILE*/
-.burger div{
-    width: 30px;
-    height: 5px;
-    background: #ffffff;
-    margin: 5px 0;
-}
-
-.burger{
-    display: none;
-}
 
 ul{
     overflow: auto;
@@ -221,11 +211,6 @@ li a:hover{
     text-align: center;
     grid-column: 2;
     grid-row: 1;
-    transform: translatex(-1000%);
-}
-
-.portmessage-animate{
-    transform: translatex(0%);
 }
 
 .portcontent p{
@@ -521,46 +506,7 @@ be circular*/
 
 /*iPhoneX Query, Index*/
 @media(max-width: 375px)
-{
-
-
-    
-
-    .burger{
-        cursor: pointer;
-        display: block;
-        width: 375px;
-        background-color: black;
-    }
-
-    .nav-links{
-        width: 100%;
-        display: flex;
-        height: auto;
-        float: none;
-        margin: 0;  
-        background-color: black;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        transform: translateY(-200%);
-        transition: transform 0.5s ease-in;
-    }
-
-    .nav-clicked{
-        transform: translateY(0%);
-    }
-    
-    .toggle .line1{
-        transform: rotate(-45deg translate(-5px,6px));
-    }
-    .toggle .line2{
-        opacity: 0;
-    }
-    .toggle .line3{
-        transform: rotate(45deg translate(-5px,-6px));
-    }
-  
+{ 
     /*as this is a phone, the main style will be positioned into one column, with the content following after eachother going downwards*/
     .intro{
         grid-column: 2;
