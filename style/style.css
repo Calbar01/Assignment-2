@@ -369,6 +369,17 @@ button:hover{
     border-style: none;
 }
 
+.contactinfo{
+    background: red;
+    width: 500px;
+    vertical-align: auto;
+    border-radius: 5em;
+    background-color: lightblue;
+    border: 3px solid blue;
+    padding-bottom: 5px;
+    align-content: center;
+}
+
 /*Modal*/
 /*A Modal is a pop up message which appears on screen*/
 
