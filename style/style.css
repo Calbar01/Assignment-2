@@ -385,7 +385,7 @@ button:hover{
 
 /*This styles the container which will hold the modal, to style it for the whole page,
 and give it an opacity of 0.7.*/
-..-modal,
+.-modal,
 .randomQuoteModal,
 .todolistModal,
 .weatherModal,
